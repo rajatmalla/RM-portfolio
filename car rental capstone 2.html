@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <div class="logo">Rent My Car</div>
+  <nav class="nav-links">
+      <a href="#">Reservations</a>
+      <a href="#">Car Hire Deals</a>
+      <a href="#">Locations</a>
+      <a href="#">Gold Plus Rewards</a>
+      <a href="#">Browse Cars</a>
+      <a href="#">Payment</a>
+  </nav>
+  <div class="nav-extras">
+      <span class="language">EN/AU</span>
+      <a href="#" class="login-btn">Login/Sign-Up</a>
+  </div>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome to Car Rental Service</h2>
+      <p>Find the best cars available for rent or rent out your own car!</p>
+    </section>
+
+<!-- Booking Section -->
+<section class="booking-form">
+  <form>
+      <div class="form-group">
+          <label for="same-dropoff">Drop-off:</label>
+          <select id="same-dropoff">
+              <option>Same Drop-off Location</option>
+              <option>Different Drop-off Location</option>
+          </select>
+          <a href="#" class="discount-link">Add a Discount Code</a>
+      </div>
+      <div class="form-row">
+          <label>Pick-up Location</label>
+          <input type="text" placeholder="Enter location" required>
+      </div>
+      <div class="form-row">
+          <label>Pick-up Date</label>
+          <input type="date" required>
+          <label>Pick-up Time</label>
+          <input type="time" required>
+      </div>
+      <div class="form-row">
+          <label>Drop-off Date</label>
+          <input type="date" required>
+          <label>Drop-off Time</label>
+          <input type="time" required>
+      </div>
+      <div class="form-row">
+          <span class="info">Driver Age: Please Select an Age</span>
+      </div>
+      <button type="submit" class="cta-btn">View Vehicles</button>
+  </form>
+</section>
+
+
+    <!-- Browse Cars Section -->
+    <section id="browse">
+      <h2>Browse Cars</h2>
+      <form id="browse-form">
+        <label for="pickup-location">Pickup Location:</label>
+        <input type="text" id="pickup-location" name="pickup-location" required>
+
+        <label for="pickup-time">Pickup Time:</label>
+        <input type="datetime-local" id="pickup-time" name="pickup-time" required>
+
+        <label for="dropoff-time">Drop-off Time:</label>
+        <input type="datetime-local" id="dropoff-time" name="dropoff-time" required>
+
+        <button type="submit">Search Cars</button>
+      </form>
+      <div id="car-results"></div>
+    </section>
+
+    <!-- Rent Your Car Section -->
+    <section id="rent">
+      <h2>Advertise Your Car</h2>
+      <form id="rent-form">
+        <label for="car-model">Car Model:</label>
+        <input type="text" id="car-model" name="car-model" required>
+
+        <label for="car-location">Location:</label>
+        <input type="text" id="car-location" name="car-location" required>
+
+        <label for="price">Price per Day:</label>
+        <input type="number" id="price" name="price" required>
+
+        <button type="submit">List My Car</button>
+      </form>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment">
+      <h2>Payment Options</h2>
+      <p>Select your preferred payment method at checkout.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Car Rental Service. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
